@@ -17,7 +17,7 @@ class Usuario {
       console.log("Usuário inserido:", result.insertedId);
       client.close();
     } catch (error) {
-      console.log("Usuário não inserido");   
+      Logger.log("Erro ao atualizar usuários!" + error);   
     }
   }
 
